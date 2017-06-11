@@ -1,5 +1,10 @@
-h1 {
+header {
+  display: flex;
+  font-family: Verdana;
+  font-size: 14px;
   font-weight: bold;
-  color: blue;
-  font-size: 80px;
-}
+  }
+
+  header h1 {
+    color: MediumAquamarine;
+  }
