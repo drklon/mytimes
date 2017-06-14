@@ -42,17 +42,15 @@ header p {
 }
 
 .container {
-  display: inline-flex;
-  margin: 20px;
-  justify-content: space-around;
+  display: flex;
+  margin: 20px auto;
   font-family: Georgia;
-  font-sizeL 17px;
+  font-size 17px;
 }
 
 .content {
   display: flex;
   justify-content: center;
-  border: 1px dashed black;
 }
 
 .column {
@@ -65,6 +63,7 @@ header p {
   width: 630px;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .column.medium {
@@ -77,15 +76,19 @@ header p {
 
 
 .container div {
-  border: 1px solid black;
+  display: flex;
+}
 
+.column div {
+  display: flex;
 }
 
 .shortstory {
   display: flex;
   justify-content: center;
   text-align: center;
-  width: 50%;
+  align-items: center;
+  margin: 15px;
 }
 
 .shortstory span {
@@ -103,9 +106,12 @@ header p {
   height: 300px;
   text-align: left;
   width: 100%;
+  align-items: center;
+  padding-left: 20px;
 }
 
 .shortstory.main span {
+  display: flex;
   font-size: 40px;
 }
 
@@ -133,8 +139,81 @@ header p {
 
 .headline {
   display: flex;
+  flex-direction: column;
 }
 
-.headline {
-  width: 50%;
+.headline h2 {
+  display: flex}
+}
+
+.headline p {
+  display: flex;
+}
+
+.newsbites {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.newsbites h3 {
+  display: flex;
+  margin: 0 auto;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.newsbites p {
+  display: flex;
+  background-color: WhiteSmoke;
+  font-family: Verdana;
+  font-size: 12px;
+  color: DimGray;
+  margin: 0;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 10px 20px;
+}
+
+.half {
+  width: 300px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: MediumAquamarine;
+  margin: auto;
+  font-family: Verdana;
+  font-size: 12px;
+  height: 200px;
+  flex-direction: column;
+}
+
+footer li {
+  display: inline;
+}
+
+footer li a {
+  color: black;
+}
+
+.line1 {
+  display: inline-flex;
+  align-items: center;
+}
+
+.footerlogo {
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  border-right: 2px solid white;
+  padding-right: 20px;
+}
+
+footer p {
+  display: block;
 }
